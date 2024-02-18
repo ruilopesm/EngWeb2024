@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{name}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-amber-50">
+    <div class="px-64 my-12 overflow-y-scroll overflow-x-auto space-y-12">
+        <div class="grid grid-cols-3 items-end">
+            <a href="index.html" class="text-lg font-semibold hover:underline text-blue-500">Voltar</a>
+            <div class="flex flex-row items-end space-x-1">
+                <h1 class="text-4xl font-bold">{name}</h1>
+                <p class="text-md font-semibold text-gray-700">({identifier})</p>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="text-3xl font-semibold">Descrição</h2>
+            <div class="mt-2 text-justify">
+                {paragraphs}
+            </div>
+        </div>
+
+        <div>
+            <h2 class="text-3xl font-semibold">Imagens</h2>
+            <div class="mt-2 flex flex-col space-y-2">
+                {images}
+            </div>
+        </div>
+
+        <div>
+            <h2 class="text-3xl font-semibold">Casas</h2>
+            <div class="mt-2 space-y-4">
+                {houses}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
