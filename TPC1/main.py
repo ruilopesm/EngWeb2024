@@ -52,9 +52,9 @@ def generate_html(variables: Dict[str, str], template: TEMPLATE) -> str:
     
     return content
 
-def write_html(file: str, content: str) -> None:
+def write_html(filename: str, content: str) -> None:
     """Write the content into a new HTML file."""
-    with open("html/generated/" + file.replace(".xml", ".html"), "w") as file:
+    with open("html/generated/" + filename.replace(".xml", ".html"), "w") as file:
         file.write(content)
 
 def fix_path(path: str, prefix: str) -> str:

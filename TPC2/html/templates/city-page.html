@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Braga</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav class="bg-white border-gray-200 p-4">
+        <a href="/" class="text-4xl font-semibold">
+            Mapa Virtual
+        </a>
+    </nav>
+
+    <main class="p-4">
+        <h1 class="text-3xl font-semibold">Cidade de {name}</h1>
+
+        <p class="text-xl font-normal pt-4">{description}</p>
+
+        <div class="pt-4">
+            <dl class="max-w-md text-gray-900 divide-y divide-gray-200">
+                <div class="flex flex-col pb-3">
+                    <dt class="mb-1 text-gray-500 md:text-lg">População</dt>
+                    <dd class="text-lg font-semibold">{population} Habitantes</dd>
+                </div>
+                <div class="flex flex-col py-3">
+                    <dt class="mb-1 text-gray-500 md:text-lg">Distrito</dt>
+                    <dd class="text-lg font-semibold">{district}</dd>
+                </div>
+            </dl>
+        </div>
+
+        <h2 class="text-2xl font-medium py-4">Ligações a outras cidades </h2>
+
+        <div class="w-[50rem] relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+                <thead class="text-xs text-gray-900 uppercase bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Cidades
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Distância
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {connections}
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
