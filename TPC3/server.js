@@ -32,7 +32,6 @@ function renderMain(res) {
                 <a href="/atores">Atores</a>
             </p>
         </div>
-
         </body>
         </html>
     `

@@ -32,7 +32,7 @@ def prepare_dataset() -> None:
     genres: Dict[str, Genre] = {}
     current_genre_id: int = 0
     
-    with open("filmes.json", "r", encoding="utf-8") as file:
+    with open("material/filmes.json", "r", encoding="utf-8") as file:
         for line in file.readlines():
             data: Object = json.loads(line)
 

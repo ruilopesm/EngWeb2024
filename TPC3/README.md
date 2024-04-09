@@ -9,7 +9,7 @@
 
 ## Resumo
 
-Neste trabalho, utilizou-se o JSON [filmes.json](filmes.json) fornecido pelo docente com informação sobre filmes, para produzir um website onde se pode consultar e navegar nesta estrutura.
+Neste trabalho, utilizou-se o JSON `filmes.json` fornecido pelo docente com informação sobre filmes, para produzir um website onde se pode consultar e navegar nesta estrutura.
 
 O objetivo foi criar um serviço web que disponibiliza a informação sobre os filmes. Os filmes são servidos por um `json-server` ao servidor `node`.
 
