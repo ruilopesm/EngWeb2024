@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    .w3-container
+        h2=compositor.nome
+        p
+            b='Período: '
+            a(href='/periodos/' + compositor.periodo)= compositor.periodo
+        p
+            b='Data de Nascimento: '
+            | #{compositor.dataNasc}
+        p
+            b='Data de Óbito: '
+            |    #{compositor.dataObito}
+        p
+            b='Biografia: '
+            |    #{compositor.bio}
+        a.w3-button.w3-blue(href='/compositores/editar/' + compositor.id) Editar
+        a.w3-button.w3-red(href='/compositores/apagar/' + compositor.id) Apagar

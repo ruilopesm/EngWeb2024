@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    .w3-container
+        h2=title
+        form.w3-container(method='post')
+            fieldset
+                legend Dados do Compositor
+                label Id
+                input.w3-input(type='text' name='id' required='required' value=compositor.id)
+                label Nome
+                input.w3-input(type='text' name='nome' required='required' value=compositor.nome)
+                label Período
+                input.w3-input(type='text' name='periodo' required='required' value=compositor.periodo)
+                label Data de Nascimento
+                input.w3-input(type='date' name='dataNasc' required='required' value=compositor.dataNasc)
+                label Data de Óbito
+                input.w3-input(type='date' name='dataObito' required='required' value=compositor.dataObito)
+                label Biografia
+                textarea.w3-input(name='bio')=compositor.bio
+            button.w3-button.w3-blue.w3-mb-2(type='submit') Confirmar
+            a.w3-button.w3-red(href='/compositores') Cancelar
