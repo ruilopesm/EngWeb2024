@@ -1,0 +1,59 @@
+meta {
+  name: Criar pessoa
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/pessoas
+  body: json
+  auth: none
+}
+
+body:json {
+   {
+      "nome": "Neyanne Sampaio",
+      "idade": 47,
+      "sexo": "feminino",
+      "morada": {
+        "cidade": "Ferreira do Alentejo",
+        "distrito": "Beja"
+      },
+      "_id": "91702023-45",
+      "profissao": "Programador de aplicações",
+      "partido_politico": {
+        "party_abbr": "Ref",
+        "party_name": "Reformistas"
+      },
+      "religiao": "Taoísmo",
+      "desportos": [
+        "Peteca",
+        "Rugby de praia",
+        "Futebol Canadense"
+      ],
+      "animais": [
+        "Lagarto",
+        "Lobo"
+      ],
+      "figura_publica_pt": [
+        "Gisela João"
+      ],
+      "marca_carro": "Mini",
+      "destinos_favoritos": [
+        "Vietname"
+      ],
+      "atributos": {
+        "fumador": true,
+        "gosta_cinema": false,
+        "gosta_viajar": false,
+        "acorda_cedo": false,
+        "gosta_ler": false,
+        "gosta_musica": true,
+        "gosta_comer": false,
+        "gosta_animais_estimacao": true,
+        "gosta_dancar": false,
+        "comida_favorita": "vegetariana"
+      }
+  }
+  
+}

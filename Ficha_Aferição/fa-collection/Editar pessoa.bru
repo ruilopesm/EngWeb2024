@@ -1,0 +1,17 @@
+meta {
+  name: Editar pessoa
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{host}}/pessoas/91702023-45
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nome": "Rui Lopes"
+  }
+}
